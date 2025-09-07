@@ -17,6 +17,13 @@ For usage and setup instructions, please refer to the project's wiki page:
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
+```
+sudo apt install python3-dev
+python3 -m venv venv
+source venv/bin/activate
+pip3 install -r requirements.txt
+```
+
 ## Contributing
 
 Contributions are encouraged and more than welcome. Guidelines for creating pull requests and reporting issues can be found in  [CONTRIBUTING.md](CONTRIBUTING.md).
