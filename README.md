@@ -23,6 +23,17 @@ source venv/bin/activate
 pip3 install -r requirements.txt
 ```
 
+```
+# Creating bridge 
+sudo ./silentbridge --create-bridge --upstream eth0 --phy eth1 --sidechannel usb0
+
+# Adding interaction
+sudo ./silentbridge --add-interaction --gw-mac d0:17:c2:3f:af:e0 --client-ip 192.168.1.81 --upstream eth0 --client-mac 38:60:32:d0:ef:0b --phy eth1 --switch-mac 00:42:5a:87:09:85 --sidechannel usb0
+
+# Destroying bridge 
+sudo ./silentbridge --destroy-bridge --upstream eth0 --phy eth1 --sidechannel usb0
+```
+
 ## Contributing
 
 Contributions are encouraged and more than welcome. Guidelines for creating pull requests and reporting issues can be found in  [CONTRIBUTING.md](CONTRIBUTING.md).
